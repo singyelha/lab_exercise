@@ -26,36 +26,74 @@ html {
     top: 0;
     z-index: 1000;
 }
+
 /* Home Section */
 #home {
     padding: 100px 0;
+    background-color: #e9ecef; /* Light grey background */
 }
 #home img {
-    border-radius: 50%;
-    width: 150px;
+    height: 350px;
+    width: 300px;
 }
+
 /* Skills Section */
 #skills {
     padding: 100px 0;
+    background-color: #ffffff; /* White background */
 }
 .progress-bar {
     background-color: #007bff;
 }
+
 /* Portfolio Section */
 #portfolio {
     padding: 100px 0;
+    background-color: #f8f9fa; /* Light grey background */
 }
+
 /* Contact Section */
 #contact {
     padding: 100px 0;
+    background-color: #343a40; /* Dark grey background */
+    color: white; /* Ensure text is visible on dark background */
 }
+
 /* Footer */
 footer {
     padding: 20px;
-    background-color: #343a40;
+    background-color: #343a40; /* Dark grey background */
     color: white;
 }
 footer a {
     color: white;
     margin: 0 10px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Card Body */
+.card-body {
+    position: relative; /* To position the overlay */
+}
+
+.card-text {
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-text {
+    opacity: 1; /* Show text when hovering */
+}
+/* Footer Styles */
+
+footer a:hover {
+    color: #007bff; /* Add a hover effect with a lighter blue color */
+}
+
+.social-icons {
+    font-size: 24px; /* Larger icons for better visibility */
+}
+
+footer p {
+    margin-top: 10px; /* Spacing between icons and copyright text */
 }

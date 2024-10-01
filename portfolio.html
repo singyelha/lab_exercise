@@ -6,6 +6,7 @@
     <title>Singye Lhadon - Portfolio</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/font awesome/all.css">
+    <link rel="stylesheet" href="/font awesome/fontawesome.css">
     <link rel="stylesheet" href="/style.css">
     
     </style>
@@ -32,10 +33,16 @@
 
     <!-- Home Section -->
     <section id="home" class="text-center">
-        <div class="container">
-            <h1>Singye Lhadon</h1>
-            <p>I'm Singye Lhadon, currently pursuing a Diploma in Computer System and Network at Jigme Namgyel Engineering College. Passionate about technology, I enjoy working with systems and networks, constantly expanding my knowledge to solve complex problems and optimize performance in the IT field.</p>
-            <img src="/picture/photo_2024-09-30_14-28-45.jpg" alt="Profile Picture">
+        <div class="container d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-md-6 text-left">
+                    <h1>About Me</h1>
+                    <p>I'm Singye Lhadon, currently pursuing a Diploma in Computer System and Network at Jigme Namgyel Engineering College. Passionate about technology, I enjoy working with systems and networks, constantly expanding my knowledge to solve complex problems and optimize performance in the IT field.</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <img src="/picture/photo_2024-09-30_14-28-45.jpg" alt="Profile Picture" class="img-fluid" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -50,6 +57,7 @@
                         <div class="card-body">
                             <img src="/picture/images.png" alt="HTML logo" width="60px" height="60px">
                             <h5 class="card-title">HTML</h5>
+                            <span class="percentage-sign">100%</span>
                             <p class="card-text">Proficient in HTML5 for building well-structured web pages.</p>
                         </div>
                     </div>
@@ -60,6 +68,7 @@
                         <div class="card-body">
                             <img src="/picture/images (1).png" alt="CSS logo" width="70px" height="70px">
                             <h5 class="card-title">CSS</h5>
+                            <span class="percentage-sign">90%</span>
                             <p class="card-text">Experienced in creating responsive layouts and stylish interfaces with CSS.</p>
                         </div>
                     </div>
@@ -70,6 +79,7 @@
                         <div class="card-body">
                             <img src="/picture/1416690-js-emblem-orange-shield-and-white-text-vetor.jpg" alt="java logo" width="80px" height="80px">
                             <h5 class="card-title">JavaScript</h5>
+                            <span class="percentage-sign">80%</span>
                             <p class="card-text">Skilled in interactive web development using JavaScript.</p>
                         </div>
                     </div>
@@ -80,6 +90,7 @@
                         <div class="card-body">
                             <img src="/picture/images.jpeg" alt="PYTHON logo" width="70px" height="70px">
                             <h5 class="card-title">Python</h5>
+                            <span class="percentage-sign">70%</span>
                             <p class="card-text">Solid understanding of Python for scripting and automation.</p>
                         </div>
                     </div>
@@ -99,8 +110,8 @@
                         <img src="/picture/WhatsApp Image 2024-09-01 at 15.28.20_796a3f2e.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Hostel Room Booking System</h5>
-                            <p class="card-text">The Hostel Room Booking System is an online platform for users to reserve hostel rooms and manage bookings easily, featuring an admin panel for room management.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <p class="card-text" style="display: none;">The Hostel Room Booking System is an online platform for users to reserve hostel rooms and manage bookings easily, featuring an admin panel for room management.</p>
+                            <button class="btn btn-primary read-more">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -109,8 +120,8 @@
                         <img src="/picture/Task-Management-Application.jpg" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Task Management Application</h5>
-                            <p class="card-text">The Task Management Application enables users to organize and track tasks, set deadlines, and collaborate, enhancing productivity and efficiency.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <p class="card-text" style="display: none;">The Task Management Application enables users to organize and track tasks, set deadlines, and collaborate, enhancing productivity and efficiency.</p>
+                            <button class="btn btn-primary read-more">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -119,8 +130,8 @@
                         <img src="/picture/images (2).png" class="card-img-top" alt="Project 3" width="175px" height="175px">
                         <div class="card-body">
                             <h5 class="card-title">DIT Inventory Management System</h5>
-                            <p class="card-text">The DIT Inventory Management System efficiently tracks inventory, maintains stock levels, and streamlines order management to reduce waste and enhance operational efficiency.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
+                            <p class="card-text" style="display: none;">The DIT Inventory Management System efficiently tracks inventory, maintains stock levels, and streamlines order management to reduce waste and enhance operational efficiency.</p>
+                            <button class="btn btn-primary read-more">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -129,34 +140,71 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="text-center">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-header text-center">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p>Feel free to drop me a message. I'll get back to you as soon as possible.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-dark btn-block">Send Message</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email">
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
-            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="social-icons mb-3">
+                <a href="https://linkedin.com" target="_blank" class="mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="mx-2"><i class="fab fa-github"></i></a>
+            </div>
             <p>&copy; 2024 Singye Lhadon</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/font awesome/all.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreButtons = document.querySelectorAll('.read-more');
+
+        readMoreButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                const cardText = this.previousElementSibling; // Get the p element
+
+                // Toggle the display property
+                if (cardText.style.display === "none") {
+                    cardText.style.display = "block"; // Show the text
+                    this.textContent = "Read Less"; // Change button text
+                } else {
+                    cardText.style.display = "none"; // Hide the text
+                    this.textContent = "Read More"; // Change button text back
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
